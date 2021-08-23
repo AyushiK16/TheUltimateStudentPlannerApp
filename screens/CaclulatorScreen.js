@@ -68,9 +68,7 @@ export default class CalculatorScreen extends React.Component{
                     padding: RFValue(10),
                   }}
                 >
-                  <Text style = {styles.label}>Do you want to know how you performed?</Text>
-                  <Text style = {styles.label3}>Enter your marks, and maximun possible marks below and find out!</Text>
-
+                  
                 <Text style={styles.label}>Total Possible Marks for Each Subject </Text>
                   <TextInput
                     style={styles.formTextInput}
