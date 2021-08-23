@@ -7,6 +7,7 @@ import Notifications from '../screens/Notifications'
 import {Icon} from 'react-native-elements'
 import LogoutScreen from '../screens/LogoutScreen';
 import CalculatorScreen from '../screens/CaclulatorScreen';
+import BreakPage from '../screens/BreakPage';
 
 export const AppDrawerNavigator = createDrawerNavigator({
     Home : {screen : TabNavigator},
@@ -21,10 +22,17 @@ export const AppDrawerNavigator = createDrawerNavigator({
             drawerLabel : 'Marks Caclulator'
     }},
 
+    BreakPage: {screen : BreakPage,
+        navigationOptions: {
+            drawerLabel: 'Take A Break'
+        }},
+
+
     LogoutScreen: {screen : LogoutScreen,
         navigationOptions: {
             drawerLabel : 'Logout'
         }},
+
     
     
     
