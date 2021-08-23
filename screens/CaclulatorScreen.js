@@ -55,9 +55,9 @@ export default class CalculatorScreen extends React.Component{
         return(
             <ScrollView>
                 <KeyboardAvoidingView>
-          <View style={{ flex: 0.5 }}>
+          <View style={{ flex: 0.5, backgroundColor: '#81B7B1' }}>
             <View style={{ flex: 0.12 }}>
-              <MyHeader title="Marks Caclulator" navigation={this.props.navigation} />
+              <MyHeader title="Marks Calculator" navigation={this.props.navigation} />
             </View>
     
     
@@ -68,6 +68,8 @@ export default class CalculatorScreen extends React.Component{
                     padding: RFValue(10),
                   }}
                 >
+                  <Text style = {styles.label}>Do you want to know how you performed?</Text>
+                  <Text style = {styles.label3}>Enter your marks, and maximun possible marks below and find out!</Text>
 
                 <Text style={styles.label}>Total Possible Marks for Each Subject </Text>
                   <TextInput
@@ -227,17 +229,22 @@ export default class CalculatorScreen extends React.Component{
       },
       label:{
         fontSize:RFValue(18),
-        color:"#717D7E",
+        //color:"#717D7E",
         fontWeight:'bold',
         padding:RFValue(10),
         marginLeft:RFValue(20)
       },
       label2:{
         fontSize:RFValue(18),
-        color:"#717D7E",
+        //color:"#717D7E",
         fontWeight:'bold',
         marginTop: 10,
         padding:RFValue(10),
+        marginLeft:RFValue(20)
+      },
+      label3:{
+        fontSize:RFValue(14),
+        //color:"#717D7E",
         marginLeft:RFValue(20)
       },
       formTextInput: {
@@ -246,7 +253,7 @@ export default class CalculatorScreen extends React.Component{
         padding: RFValue(10),
         borderWidth:1,
         borderRadius:2,
-        borderColor:"grey",
+        borderColor:"black",
         marginBottom:RFValue(20),
         marginLeft:RFValue(20)
       },

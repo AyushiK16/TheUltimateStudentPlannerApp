@@ -254,6 +254,7 @@ export default class WelcomeScreen extends React.Component {
                 >
                   <Text style={styles.buttonText}>SignUp</Text>
                 </TouchableOpacity>
+                <Text> New User? Click here!</Text>
               </View>
             </View>
     
